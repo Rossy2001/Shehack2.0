@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shehack/firstpage.dart';
 //import 'package:prototype/dashboard.dart';
 
 class secondpage extends StatefulWidget {
@@ -40,8 +41,10 @@ class _ProfileState extends State<secondpage> {
                         icon: const Icon(Icons.arrow_back),
                         color: Colors.white,
                         onPressed: () {
-                          // Navigator.push(context,
-                          // MaterialPageRoute(builder: (_) => const Dashboard()));
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (_) => const firstpage()));
                         },
                       ),
                       const SizedBox(
@@ -57,7 +60,7 @@ class _ProfileState extends State<secondpage> {
                       ),
                       const SizedBox(width: 85),
                       const ImageIcon(
-                        AssetImage("Assets/results.jpg"),
+                        AssetImage("Assets/icon.jpg"),
                         color: Colors.white,
                         size: 25,
                       ),
@@ -69,7 +72,7 @@ class _ProfileState extends State<secondpage> {
             Container(
               margin: const EdgeInsets.fromLTRB(20, 140, 20, 0),
               height: MediaQuery.of(context).size.height * 0.33,
-              width: MediaQuery.of(context).size.width * 100,
+              width: MediaQuery.of(context).size.width * 150,
               decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(20.0),
